@@ -3,6 +3,8 @@ add_subdirectory(pf)
 add_subdirectory(sensors)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+include_directories(${CMAKE_CURRENT_PROJECT_SOURCE_DIR}/include)
+include_directories(${PROJECT_SOURCE_DIR}/include)
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
 set(amcl_dependencies )
