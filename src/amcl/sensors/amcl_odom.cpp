@@ -27,6 +27,8 @@
 //
 ///////////////////////////////////////////////////////////////////////////
 
+#define _USE_MATH_DEFINES
+
 #include <algorithm>
 
 #include <sys/types.h> // required by Darwin
