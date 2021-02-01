@@ -12,7 +12,9 @@ extern "C" {
 // Use rand, and srand for such system.
 static double drand48(void)
 {
-    return ((double)rand())/RAND_MAX;
+	long long d = rand() - 1;
+	if (d < 0) d = 0;
+    return ((double)(d))/RAND_MAX;
 }
 
 static void srand48(long int seedval)
